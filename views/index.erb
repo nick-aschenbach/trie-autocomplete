@@ -1,0 +1,21 @@
+<html>
+<head>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.0/jquery-ui.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      var input = $('search_box');
+      $('#search_box').autocomplete({
+        source: 'words',
+        minLength: 2
+      });
+    });
+  </script>
+</head>
+<body>
+<div class="ui-widget">
+  <input id="search_box">
+</div>
+</body>
+</html>
